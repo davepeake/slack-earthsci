@@ -21,7 +21,7 @@ def earthsci():
     '''
     if request.form['token'] == verification_token:
     '''
-    #q = requests.get('http://128.250.56.142:8000/current-weather/').json()
+    q = requests.get('http://128.250.56.142:8000/current-weather/').json()
 
     #ret_str = 'The current temperature is %0.1f degrees, with a humidity of %0.1f%% with a wind speed of %0.1f kph.' % (q['curr_temp'], q['curr_humid'], q['curr_wind_spd'])
     ret_str = 'Testing'
