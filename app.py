@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello():
     return "Earth Sci Weather for Slack"
 
-@app.route('/earthsci', methods=['GET'])
+@app.route('/earthsci/', methods=['GET'])
 def earthsci():
     # do the thing
     # grab the data
