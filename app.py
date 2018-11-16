@@ -14,7 +14,7 @@ verificiation_token=os.environ['VERIFICATION_TOKEN']
 def hello():
     return "Earth Sci Weather for Slack"
 
-@app.route('/earthsci', methods=['POST'])
+@app.route('/earthsci', methods=['POST','GET'])
 def earthsci():
     # do the thing
     # grab the data
